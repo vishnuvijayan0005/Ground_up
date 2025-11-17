@@ -45,10 +45,16 @@ Vercel (Hosting/Deployment)
 
 # Folder Structure
 /assets
-  ├── images
-  ├── icons
-/css
-  ├── style.css
-index.html
-about.html
-contact.html
+  -images
+  -icons
+/font
+/index.html
+/index.css
+/aboutus.html
+/aboutus.css
+/aboutrobbie.html
+/aboutrobbie.css
+/training.html
+/training.css
+/contact.html
+/contact.css

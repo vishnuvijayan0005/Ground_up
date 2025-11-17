@@ -1,4 +1,6 @@
-/* Navbar */
+/* ----------------------------------------------------
+   NAVBAR
+---------------------------------------------------- */
 
 .custom-navbar {
     width: 100%;
@@ -18,24 +20,21 @@
     height: 100%;
 }
 
-.sidebar>ul {
+.sidebar > ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.sidebar ul:hover {
-    color: #05A93D;
-}
-
-.sidebar li:hover {
-    color: #05A93D;
-}
-
 .sidebar ul a {
     text-decoration: none;
     color: black;
+}
+
+.sidebar li:hover,
+.sidebar a:hover {
+    color: #05A93D;
 }
 
 .icon {
@@ -54,6 +53,14 @@
     z-index: 2;
 }
 
+.icon:hover .icon-content {
+    display: block;
+}
+
+.icon-content > ul {
+    list-style: none;
+}
+
 .icon-content a {
     color: black;
     padding: 12px 16px;
@@ -62,25 +69,22 @@
     text-align: left;
 }
 
-.icon:hover .icon-content {
-    display: block;
-}
-
-.icon-content>ul {
-    list-style: none;
-}
-
-/* Body Part */
-
-/* Section-1 */
-#readmore a {
-    background-image: url(assets/goldarrow.png);
-}
+/* ----------------------------------------------------
+   CONTAINER
+---------------------------------------------------- */
 
 .container {
     padding: 0px 15px;
     max-width: 1610px;
     margin: 0 auto;
+}
+
+/* ----------------------------------------------------
+   SECTION 1
+---------------------------------------------------- */
+
+#readmore a {
+    background-image: url(assets/goldarrow.png);
 }
 
 .content {
@@ -142,22 +146,22 @@
     background-position: bottom;
 }
 
-/* Section-2 */
+/* ----------------------------------------------------
+   SECTION 2
+---------------------------------------------------- */
+
 .sect2 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
     gap: 20px;
-    padding: 0 10%;
+    padding: 40px 10%;
     box-sizing: border-box;
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .sec21 {
     flex: 1 1 22%;
-    /* max-width: 380px; */
     min-width: 250px;
     background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -191,16 +195,16 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #000;
 }
 
 .sec21 p {
     font-size: 15px;
     line-height: 1.6;
-    color: #555;
 }
 
-/* Section 3 */
+/* ----------------------------------------------------
+   SECTION 3
+---------------------------------------------------- */
 
 .sect3 {
     width: 100%;
@@ -229,14 +233,9 @@
     font-weight: 400;
 }
 
-.sect31 p {
+.sec31 p {
     font-size: 17px;
     line-height: 24px;
-    font-weight: 400;
-}
-
-.sec31 h5 {
-    font-size: 18px;
 }
 
 .card {
@@ -257,9 +256,7 @@
     width: 81px;
     height: 26px;
     padding: 5px 10px 4px 10px;
-    margin-bottom: 10px;
-    margin-left: 33px;
-    margin-right: 27px;
+    margin: 10px 27px 10px 33px;
 }
 
 .card-body h5 {
@@ -269,7 +266,7 @@
 
 .card-lowerbody {
     width: 121px;
-    Height: 21px;
+    height: 21px;
     padding-top: 40px;
     padding-left: 13px;
     display: flex;
@@ -280,15 +277,13 @@
     text-decoration: none;
     color: #05A93D;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 3px;
 }
 
 .arrow-icon {
     border-radius: 50%;
-    border: solid;
-    border-color: #F67C01;
+    border: solid 1px #F67C01;
     width: 18px;
     height: 18px;
     display: flex;
@@ -304,27 +299,26 @@
     object-fit: cover;
 }
 
-/* Section 4 */
+/* ----------------------------------------------------
+   SECTION 4
+---------------------------------------------------- */
+
 .sect4 {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .sec41 {
     width: 30%;
-    height: auto;
     margin-left: 10%;
-
 }
 
 .sec41 img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .sec42 {
@@ -339,7 +333,7 @@
 
 .sec421 {
     width: 520px;
-    height: 280px;
+    height: auto;
 }
 
 .sec421 p {
@@ -353,7 +347,6 @@
     background-color: #05A93D;
     width: 171px;
     height: 48px;
-    gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,7 +357,9 @@
     color: white;
 }
 
-/* Footer */
+/* ----------------------------------------------------
+   FOOTER
+---------------------------------------------------- */
 
 .custom-footer {
     width: 100%;
@@ -379,10 +374,10 @@
 
 .foot1 {
     width: 229px;
-    height: 64.22;
+    height: 64.22px;
 }
 
-.foot img {
+.foot1 img {
     width: 100%;
     height: 100%;
 }
@@ -393,7 +388,7 @@
     gap: 40px;
 }
 
-.foot2>ul a {
+.foot2 ul a {
     text-decoration: none;
 }
 
@@ -431,13 +426,15 @@
     font-size: 14px;
 }
 
+/* ----------------------------------------------------
+   SECTION 5 (FORM)
+---------------------------------------------------- */
 
-/* Section 5 */
 .sect5 {
     max-width: 944px;
     padding-top: 79px;
     padding-bottom: 97px;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .sect5-main {
@@ -449,9 +446,8 @@
 }
 
 .sect5 h3 {
-    font-size: 46px;
-    font-family: Gilroy Bold;
     font-size: 43px;
+    font-family: Gilroy Bold;
     font-weight: lighter;
     line-height: 69px;
 }
@@ -464,27 +460,16 @@
 .third-part form {
     display: grid;
     grid-template-areas:
-        'fname sname'
-        'mailto phone'
-        'message message';
+        "fname sname"
+        "mailto phone"
+        "message message";
     grid-gap: 80px;
 }
 
-.fname {
-    grid-area: fname;
-}
-
-.surname {
-    grid-area: sname;
-}
-
-.mailto {
-    grid-area: mailto;
-}
-
-.msg {
-    grid-area: message;
-}
+.fname { grid-area: fname; }
+.surname { grid-area: sname; }
+.mailto { grid-area: mailto; }
+.msg { grid-area: message; }
 
 .form-body label {
     font-family: 'Times New Roman';
@@ -498,7 +483,6 @@
     height: 26px;
     border: none;
     border-bottom: 2px solid #777777;
-
 }
 
 #msg-part {
@@ -518,372 +502,31 @@
     border-radius: 30px;
 }
 
+/* ----------------------------------------------------
+   RESPONSIVE (MERGED + FIXED)
+---------------------------------------------------- */
 
-
-/* Responsive navbar */
-@media (max-width:320px) {
+@media (max-width: 1024px) {
 
     /* Navbar */
-
     .icon {
         display: block;
     }
-
     .sidebar {
         display: none;
     }
 
-    .logo {
-        width: 40%;
-        height: 30%;
-    }
-
     .custom-navbar {
         justify-content: space-between;
-        padding-left: 20px;
+        padding: 0 20px;
     }
 
-    /* Footer */
-    .foot2 ul {
-        gap: 10px;
-        font-size: 10px;
-    }
-
-    .foot5 h6 {
-        text-align: center;
-        font-size: 10px;
-    }
-
-    .foot3 {
-        width: 180px;
-        height: 10px;
-    }
-
+    /* Section 2 */
     .sect2 {
         flex-direction: column;
     }
 
-    .sec32 {
-        flex-direction: column;
-    }
-
-    .sec31 {
-        width: 100%;
-    }
-
-    .sect4 {
-        flex-direction: column-reverse;
-        align-items: start;
-        gap: 80px;
-        padding-left: 25px;
-    }
-
-    .sec43 {
-        margin-top: 75%;
-    }
-
-    .sec41 {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .sec421 {
-        max-width: 340px;
-    }
-
-    .sec41 img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .title h1 span {
-        font-size: 61px;
-    }
-
-    .cantainer {
-        padding: 0;
-    }
-
-    .form-body input {
-        height: 26px;
-        width: 100%;
-    }
-
-    .form-body,
-    .form-body * {
-        box-sizing: border-box;
-    }
-
-    .form-body {
-        display: block !important;
-        width: 100% !important;
-        padding: 0;
-    }
-
-    .form-body>div {
-        display: block !important;
-        width: 100% !important;
-        margin-bottom: 12px;
-        clear: both;
-    }
-
-    .form-body label {
-        display: block;
-        margin-bottom: 6px;
-        font-size: 14px;
-    }
-
-    .form-body input,
-    .form-body textarea {
-        display: block;
-        width: 100%;
-        height: 40px;
-
-
-    }
-
-    .form-body textarea#msg-part {
-        min-height: 110px;
-        height: auto;
-        resize: vertical;
-    }
-
-
-}
-
-@media (min-width:321px) and (max-width:640px) {
-    /* Navbar */
-
-    .icon {
-        display: block;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-  .sec31{padding: 0;
-}
-
-    .custom-navbar {
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 30px;
-    }
-
-    /* Footer */
-    .foot2 ul {
-        gap: 10px;
-        font-size: 10px;
-    }
-
-    .foot5 h6 {
-        text-align: center;
-        font-size: 10px;
-    }
-
-    .foot3 {
-        width: 180px;
-        height: 10px;
-    }
-
-    .sect2 {
-        flex-direction: column;
-    }
-
-    .sec32 {
-        flex-direction: column;
-    }
-
-    .sec31 {
-        width: 100%;
-    }
-
-    .sect4 {
-        flex-direction: column-reverse;
-        align-items: start;
-        gap: 80px;
-        padding-left: 25px;
-    }
-
-   .sec43 {
-        margin-top: 40%;
-    }
-
-    .sec41 {
-        width: 80%;
-        margin-left: 0;
-    }
-
-    .sec421 {
-        max-width: 340px;
-    }
-
-    .sec41 img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .sec42{
-        width: 100%;
-    }
-    .title h1 span {
-        font-size: 61px;
-    }
-
-    .cantainer {
-        padding: 0;
-    }
-
-    .form-body input {
-        height: 26px;
-        width: 100%;
-    }
-
-    .form-body,
-    .form-body * {
-        box-sizing: border-box;
-    }
-
-    .form-body {
-        display: block !important;
-        width: 100% !important;
-        padding: 0;
-    }
-
-    .form-body>div {
-        display: block !important;
-        width: 100% !important;
-        margin-bottom: 12px;
-        clear: both;
-    }
-
-    .form-body label {
-        display: block;
-        margin-bottom: 6px;
-        font-size: 14px;
-    }
-
-    .form-body input,
-    .form-body textarea {
-        display: block;
-        width: 100%;
-        height: 40px;
-
-
-    }
-
-    .form-body textarea#msg-part {
-        min-height: 110px;
-        height: auto;
-        resize: vertical;
-    }
-
-.sec42{
-    width: 100%;
-}
-
-}
-
-@media (min-width:641px) and (max-width:768px) {
-    /* Navbar */
-
-    .icon {
-        display: block;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .sec42{
-        width: 100%;
-    }
-
-    .custom-navbar {
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 30px;
-    }
-    .sect2 {
-        flex-direction: column;
-    }
-
-    .sec32 {
-        flex-direction: column;
-    }
-
-    .sec31 {
-        width: 100%;
-    }
-
-    .sect4 {
-        flex-direction: column-reverse;
-        align-items: start;
-        gap: 80px;
-        padding-left: 25px;
-    }
-
-    .sec43 {
-        margin-top: 40%;
-    }
-
-    .sec41 {
-        width: 80%;
-        margin-left: 0;
-    }
-
-   
-
-    .sec41 img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .sec41 img {
-        width: 90%;
-        height: 90%;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .title h1 span {
-        font-size: 61px;
-    }
-
-    .cantainer {
-        padding: 0;
-    }
-
-}
-
-@media (min-width:769px) and (max-width:1024px) {
-    /* Navbar */
-
-    .icon {
-        display: block;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-
-    .custom-navbar {
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 30px;
-    }
- .sect2 {
-        flex-direction: column;
-    }
-
+    /* Section 3 */
     .sec32 {
         flex-wrap: wrap;
     }
@@ -892,22 +535,72 @@
         width: 100%;
     }
 
-    
-
-    .sec43 {
-        margin-top: 75%;
+    /* Section 4 */
+    .sect4 {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 60px;
+        padding-left: 25px;
     }
 
-    .sec41 {
+    .sec41,
+    .sec42 {
         width: 100%;
-        margin-left: 0;
+        margin: 0;
     }
 
-    
-
-    .sec41 img {
-        width: 90%;
-        height: 90%;
+    .sec421 {
+        max-width: 340px;
     }
 
+    /* Cards */
+   
+
+    /* Section 1 Title */
+    .title h1 span {
+        font-size: 61px;
+    }
+
+    /* Form */
+    .form-body,
+    .form-body * {
+        box-sizing: border-box;
+    }
+
+    .third-part form {
+        display: block;
+    }
+
+    .form-body div {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .form-body input,
+    .form-body textarea {
+        width: 100%;
+        height: 40px;
+    }
+
+    .form-body textarea#msg-part {
+        min-height: 110px;
+        height: auto;
+        resize: vertical;
+    }
+
+    /* Footer */
+    .foot2 ul {
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    .foot3 {
+        width: 180px;
+        height: 10px;
+    }
+
+    .foot5 h6 {
+        text-align: center;
+        font-size: 10px;
+    }
 }

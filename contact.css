@@ -243,112 +243,161 @@
 
 
 /* Responsive navbar */
-@media (max-width:320px) {
+
+@media (max-width:480px) {
 
     /* Navbar */
-    
     .icon{
         display: block;
     }
     .sidebar{
         display: none;
     }
-    .logo{
-        width: 40%;
-        height: 30%;
-    }
     .custom-navbar{
         justify-content: space-between;
-        padding-left: 20px;
+        padding: 0 20px;
+    }
+    .logo{
+        width: 160px;
+    }
+
+    /* Contact Banner */
+    .title-contact h2{
+        font-size: 36px;
+    }
+
+    /* Contact Section */
+    .contactus{
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        padding: 40px 20px;
+    }
+    .third-part form{
+        grid-template-areas:
+        "fname"
+        "sname"
+        "mailto"
+        "phone"
+        "message";
+        grid-gap: 40px;
+    }
+
+    #msg-part{
+        min-height: 120px;
+    }
+
+    /* Footer */
+    .custom-footer{
+        height: auto;
+        padding: 40px 0px;
+        gap: 30px;
+    }
+    .foot2 ul{
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .foot3{
+        width: 140px;
+        gap: 10px;
+    }
+    .footimages{
+        width: 32px;
+        height: 32px;
+    }
+    .foot5 h6{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+
+@media (min-width:481px) and (max-width:768px) {
+
+    /* Navbar */
+    .icon{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+    .custom-navbar{
+        padding: 0 30px;
+    }
+    .logo{
+        width: 200px;
+    }
+
+    /* Contact Section */
+    .contactus{
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        padding: 50px 40px;
+    }
+
+    .third-part form{
+        grid-template-areas:
+        "fname sname"
+        "mailto phone"
+        "message message";
+        grid-gap: 50px;
     }
 
     /* Footer */
     .foot2 ul{
-    gap: 10px;
-    font-size: 10px;
-    }
-    .foot5 h6 {
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .foot3 {
-        width: 180px;
-        height: 10px;
+        gap: 25px;
+        font-size: 14px;
     }
 }
-@media (min-width:321px) and (max-width:640px) {
+
+
+
+@media (min-width:769px) and (max-width:1024px) {
+
     /* Navbar */
-    
     .icon{
-        display: block;
-    }
-    .sidebar{
         display: none;
     }
-    .logo{
-        width: 40%;
-        height: 30%;
+    .sidebar{
+        display: block;
     }
     .custom-navbar{
+        padding: 0 50px;
         justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 30px;
+    }
+
+    /* Contact */
+    .contactus{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        padding: 80px 40px;
+    }
+
+    .third-part form{
+        grid-gap: 60px;
     }
 
     /* Footer */
-    .foot2 ul{
-    gap: 10px;
-    font-size: 10px;
+    .custom-footer{
+        padding: 60px 0;
     }
-    .foot5 h6 {
-        text-align: center;
-        font-size: 10px;
-    }
-    
-    .foot3 {
-        width: 180px;
-        height: 10px;
-    }
-    
 }
-@media (min-width:641px) and (max-width:768){
-    /* Navbar */
-    
-    .icon{
+
+
+@media (min-width:1025px) {
+
+    .sidebar{
         display: block;
     }
-    .sidebar{
-        display: none;
-    }
-    .logo{
-        width: 40%;
-        height: 30%;
-    }
-    .custom-navbar{
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 30px;
-    }
-
-}
-@media (min-width:769px) and (max-width:1024){
-    /* Navbar */
-    
     .icon{
-        display: block;
-    }
-    .sidebar{
         display: none;
     }
-    .logo{
-        width: 40%;
-        height: 30%;
-    }
-    .custom-navbar{
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 30px;
-    }
 
+    .contactus{
+        grid-template-columns: 2fr 3fr;
+        column-gap: 160px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
 }

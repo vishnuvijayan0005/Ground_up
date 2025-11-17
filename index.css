@@ -575,6 +575,7 @@
         flex-direction: column-reverse;
         align-items: start;
         gap: 80px;
+        padding-left: 25px;
     }
 
     .sec43 {
@@ -706,6 +707,7 @@
         flex-direction: column-reverse;
         align-items: start;
         gap: 80px;
+        padding-left: 25px;
     }
 
    .sec43 {
@@ -823,6 +825,7 @@
         flex-direction: column-reverse;
         align-items: start;
         gap: 80px;
+        padding-left: 25px;
     }
 
     .sec43 {
@@ -889,11 +892,7 @@
         width: 100%;
     }
 
-    /* .sect4 {
-        flex-direction: column-reverse;
-        align-items: start;
-        gap: 80px;
-    } */
+    
 
     .sec43 {
         margin-top: 75%;

@@ -4,7 +4,7 @@ Ground Up is a modern and responsive website created to spread awareness about s
 The platform highlights waste categories, eco-friendly practices, and simple ways individuals can contribute toward a cleaner environment.
 
 # Live Website:
- https://ground-37jtka5ka-vishnu-vijayans-projects-45054d9e.vercel.app/
+ https://ground-up-tan.vercel.app/
 
 # Features
 ✔ Modern & Clean UI
